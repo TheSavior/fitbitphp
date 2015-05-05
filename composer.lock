@@ -1,25 +1,37 @@
 {
-    "hash": "2197f9e6feb8a3daad78dc2d1bd5a129",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "3ce082758fdd2a0aab3445e831ad59d1",
     "packages": [
         {
             "name": "lusitanian/oauth",
-            "version": "dev-master",
+            "version": "v0.3.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TheSavior/PHPoAuthLib.git",
-                "reference": "45dd1fcbae43ae9095125f44fe604916329a4ea5"
+                "url": "https://github.com/Lusitanian/PHPoAuthLib.git",
+                "reference": "ac5a1cd5a4519143728dce2213936eea302edf8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheSavior/PHPoAuthLib/zipball/45dd1fcbae43ae9095125f44fe604916329a4ea5",
-                "reference": "45dd1fcbae43ae9095125f44fe604916329a4ea5",
+                "url": "https://api.github.com/repos/Lusitanian/PHPoAuthLib/zipball/ac5a1cd5a4519143728dce2213936eea302edf8a",
+                "reference": "ac5a1cd5a4519143728dce2213936eea302edf8a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.3.0"
             },
             "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "predis/predis": "0.8.*@dev",
                 "symfony/http-foundation": "~2.1"
+            },
+            "suggest": {
+                "ext-openssl": "Allows for usage of secure connections with the stream-based HTTP client.",
+                "predis/predis": "Allows using the Redis storage backend.",
+                "symfony/http-foundation": "Allows using the Symfony Session storage backend."
             },
             "type": "library",
             "extra": {
@@ -29,9 +41,11 @@
             },
             "autoload": {
                 "psr-0": {
-                    "OAuth": "src"
+                    "OAuth": "src",
+                    "OAuth\\Unit": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -45,33 +59,24 @@
                     "email": "info@pieterhordijk.com"
                 }
             ],
-            "description": "PHP 5.4+ oAuth 1/2 Library",
+            "description": "PHP 5.3+ oAuth 1/2 Library",
             "keywords": [
-                "authentication",
+                "Authentication",
                 "authorization",
                 "oauth",
                 "security"
             ],
-            "support": {
-                "source": "https://github.com/TheSavior/PHPoAuthLib/tree/master"
-            },
-            "time": "2013-03-19 03:32:37"
+            "time": "2014-09-05 15:19:58"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "lusitanian/oauth": 20
-    },
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.4"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
