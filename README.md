@@ -22,7 +22,7 @@ Library itself handles whole OAuth application authorization workflow for you as
 Example snippet on frontend could look like:
 
     <?php
-    $fitbit = new \Fitbit\Api($_SERVER["clientid", "clientsecret");
+    $fitbit = new \Fitbit\Api($_SERVER["clientid", "clientsecret"]);
 
     $fitbit->initSession();
     $json = $fitbit->getProfile();
